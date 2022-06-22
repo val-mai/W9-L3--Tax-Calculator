@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2 class="my-4">Inserisci i tuoi dati</h2>
+        <form>
+            <div class="row mb-3">
+                <label for="inputName" class="col-sm-4 col-form-label">Nome</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputLastName" class="col-sm-4 col-form-label">Cognome</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="inputLastName">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputRAL" class="col-sm-4 col-form-label">Reddito Annuo Lordo (€)</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="inputRAL">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputInps" class="col-sm-4 col-form-label">Aliquota INPS (%)</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="inputInps">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputIrpef" class="col-sm-4 col-form-label">Aliquota Irpef (%)</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="inputIrpef">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputCR" class="col-sm-4 col-form-label">Coeff redditività (%)</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="inputCR">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+            <button type="button" class="my-4 btn btn-primary">Calcola tasse</button>
+            </div>
+        </form>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Cognome</th>
+                <th scope="col">RAL</th>
+                <th scope="col">RAN</th>
+                <th scope="col">Tot INPS</th>
+                <th scope="col">Tot Irpef</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
